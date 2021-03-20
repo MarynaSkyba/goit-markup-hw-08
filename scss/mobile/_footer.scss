@@ -1,12 +1,25 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: $bgc-main;
     display: block;
+    background-color: $bgc-main;
+
+}
+
+.container--footer {
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
     @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+        display: flex;
+        text-align: start;
+        
     }
 }
 
@@ -14,12 +27,14 @@
     display: block;
     text-align: center;
 
-    @media screen and (min-width: 767px) {
-        display: flex;
-        justify-content: center;
-        align-self: baseline;
-       
+    @media screen and (min-width: 1200px) {
+       text-align: start;
     }
+    // }
+    // @media screen and (min-width: 1200px) {
+    //     display: block;
+    //     align-self: baseline;
+    // }
   
 
     &__text {
@@ -60,19 +75,26 @@
 
 .footer-nav {
     display: block;
-    margin-top: 60px;
+   
     text-align: center;
     align-items: center;
 
-
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
     
     @media screen and (min-width: 767px) {
-        display: flex;
-        justify-content: center;
-        align-self: baseline;
+       display: inline-block;
+       justify-content: space-between;
+       align-self: baseline;
+    }        
+    @media screen and (min-width: 1200px) {
+        display: block;
+    margin-left: 70px;
+    align-self: baseline;
+        
+    }
 
-  
-    
 
 & &__title {
     margin: 0;
@@ -108,11 +130,13 @@
     border-radius: 50%;
     transition: color 250ms $timing-fn, background-color 250ms $timing-fn;
 }
+
 &__link:hover,
 &__link:focus {
     background-color: $accent-color;
     color: $primary-bg-color;
 }
+
 &__icon{
     fill: $primary-bg-color;
     height: 44px;
@@ -120,6 +144,5 @@
 
 & &__item:not(:last-child) {
     margin-right: 10px;
-}
 }
 }

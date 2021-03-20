@@ -1,18 +1,24 @@
 .subscribe {
     display: block;
-    text-align: center;
-    margin-top: 60px;
     
-    // justify-content: center;
-    // align-self: baseline;
-    // margin-left: 93px;
 
-    @media screen and (min-wudth: 767px) {
-        display: flex;
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+        margin-top: 60px;
+        display: block;
         justify-content: center;
         align-self: baseline;
-        margin-left: 93px;
+
     }
+
+    @media screen and (min-width: 1200px) {
+    display: block;
+    text-align: start;
+    justify-content: center;
+    align-self: baseline;
+    margin-left: 93px;}
+
+
 
 &__title {
     margin: 0;
@@ -29,7 +35,7 @@
 &__input {
     color: $primary-bg-color;
     padding: 15px;
-    width: 450px;
+    min-width: 358px;
     height: 50px;
     background: $bgc-main;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -43,9 +49,7 @@
         
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 358px;
-    }
+   
 }
 }
 

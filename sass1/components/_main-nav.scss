@@ -1,0 +1,52 @@
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 93px;
+ 
+    & &__item + &__item {
+    margin-left: 50px;
+     }
+
+    & &__link {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $primary-text-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;    
+    letter-spacing: 0.02em;
+
+    transition: color 250ms $timing-fn;
+    }
+
+    & &__link:focus,
+    & &__link:hover {
+    color: $accent-color;
+}
+
+    & &__link--current {
+        color: $accent-color;
+}
+    & &__link--current::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        display: block;
+        background-color: $accent-color;
+        height: 5px;
+        border-radius: 2px;
+    }
+}
+
+

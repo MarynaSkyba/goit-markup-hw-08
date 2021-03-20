@@ -1,0 +1,49 @@
+.work {
+    padding-bottom: 94px;
+
+&__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: $primary-text-color;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+} 
+&__list {
+    display: flex;
+    margin-left: -30px;
+}
+
+&__list &__item {
+    position: relative;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+}
+
+&__item &__thumb {
+    position: relative;
+}
+
+&__thumb &__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    width: 100%;
+    padding: 27px;
+    margin: 0;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    text-transform: uppercase;
+    color: $primary-bg-color;
+    background-color: rgba(47, 48, 58, 0.8);
+    
+}
+}

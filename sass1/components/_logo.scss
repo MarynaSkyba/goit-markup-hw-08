@@ -1,0 +1,21 @@
+.logo {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    color: $primary-text-color;
+    letter-spacing: 0.03em;
+
+&__color{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.15;
+    color: $accent-color;
+}}
+
+.logo-header:hover,
+.logo-header:focus {
+    color: var(--primary-text-color); 
+}

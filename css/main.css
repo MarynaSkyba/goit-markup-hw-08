@@ -1098,6 +1098,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1123,6 +1124,20 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 420px) {
+  .modal {
+    max-width: 450px;
+    max-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    width: 100%;
+  }
 }
 
 .modal .modal__text {
@@ -1299,6 +1314,10 @@ img {
   border-color: #2196F3;
 }
 
+.form-field__textarea:focus-within .form-field__label {
+  color: #2196F3;
+}
+
 .form-field .form-field__icon {
   position: absolute;
   top: 50%;
@@ -1316,6 +1335,10 @@ img {
 .form-field__input:focus-within {
   border-color: #2196F3;
   border-radius: 4px;
+}
+
+.form-field__input:focus-within ~ .form-field__label {
+  color: #2196F3;
 }
 
 .conditions {
@@ -1342,6 +1365,12 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .checkbox-label {
+    font-size: 12px;
+  }
 }
 
 .checkbox-label .checkbox-label__icon {

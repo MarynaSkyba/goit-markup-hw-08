@@ -12,6 +12,8 @@
     opacity: 1;
     transition: opacity 250ms $timing-fn;
 
+    overflow-y: scroll;
+
 }
 
 
@@ -38,6 +40,18 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $timing-fn;
 
+    @media screen and (min-width: 420px) {
+        max-width: 450px;
+        max-height: 609px;
+        // width: 100%;
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width: 528px;
+        width: 100%;
+        
+    }
+
     & &__text {
         margin: 0;
         padding: 0;
@@ -48,6 +62,8 @@
         letter-spacing: 0.03em;
         color: $primary-text-color;
         margin-bottom: 30px;
+
+       
     }
     
 }
@@ -159,6 +175,7 @@
     letter-spacing: 0.01em;
 
     color: $title-text-color;
+
 }
 }
 
@@ -187,6 +204,10 @@
 &:focus-within {
     border-color: $accent-color;
 }
+
+&:focus-within .form-field__label{
+    color: $accent-color;
+}
 }
 
 .form-field .form-field__icon {
@@ -207,6 +228,10 @@
     border-radius: 4px;
     
 }
+
+.form-field__input:focus-within  ~ .form-field__label {
+    color: #2196F3;
+  }
 
 
 .conditions {
@@ -229,6 +254,9 @@
     color: $title-text-color;
     margin-bottom: 30px;
 
+    @media screen and (max-width: 1200px) {
+        font-size: 12px;
+    }
 
     & &__icon {
     display: inline-block;

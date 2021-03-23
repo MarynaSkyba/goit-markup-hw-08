@@ -22,7 +22,7 @@
   
   .menu-toggle:hover,
   .menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+    fill: $accent-color;
   }
 
 
@@ -32,8 +32,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
-    background-color: #3f51b5;
+    padding: 40px;
+    background-color: $primary-bg-color;
     z-index: 999;
   
     transform: translateX(100%);
@@ -46,26 +46,99 @@
   
   .menu-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 10px;
+    right: 15px;
     color: #fff;
+
   }
 
   .mobile-menu {
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-bottom: 302px;
+    
   }
   
-  .mobile-menu .link {
+  .mobile-menu__link {
     display: block;
-    padding: 10px;
+   
     text-decoration: none;
     font-weight: 500;
     font-size: 40px;
     line-height: 1.175;
-    text-align: center;
+    text-align: start;
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+    margin-bottom: 32px;
+
+
+    &:focus,
+    &:hover {
+    color: $accent-color;
+  }
+  }
+
+  .mobile-contacts .mobile__link--tel {
+    display: block;
+    
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    color: $title-text-color;
+
+    margin-bottom: 32px;
+
+    &:focus,
+    &:hover {
+    color: $accent-color;
+  }
+  }
+
+.mobile-contacts {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+
+.mobile-contacts .mobile__link {
+    display: block;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166;
     letter-spacing: 0.02em;
 
-    color: $primary-text-color;
+    color: $title-text-color;
+    margin-bottom: 64px;
+  }
+
+  .mobile-site {
+    padding: 0;
+    margin: 0;
+      display: inline-flex;
+  }
+
+  .mobile-site__link {
+    padding: 0;
+    margin: 0;
+    
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;  
+    letter-spacing: 0.02em;
+    
+    color: $accent-color;
+    
+}
+
+.mobile-site__link:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    margin-right: 10px;
+
   }

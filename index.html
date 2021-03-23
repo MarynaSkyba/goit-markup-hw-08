@@ -17,31 +17,32 @@
   <body>
     <header class="page-header">
         <div class="container">
-            <nav class="main-nav">
-                <a href="./index.html" lang="en" class="logo"><span class="logo__color">Web</span>Studio</a>
-                
-                <button class="menu-toggle js-open-menu"
+           <div class="main-nav">
+            <a href="./index.html" lang="en" class="logo"><span class="logo__color">Web</span>Studio</a>
+            
+            <button class="menu-toggle js-open-menu"
                 aria-controls="mobile-menu"
                 aria-expanded="false">
-             <svg
+                <svg
              class="menu__icon" 
              width="40" 
              height="40" 
              aria-label="Переключатель мобильного меню">
 
-             <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
           </svg>
+          </button>
 
-        
-                <ul class="site-nav"  data-menu id="menu-container">
-                    <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
-                    <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолию</a></li> 
-                    <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
-                </ul>
-            </nav>   
-        
-            <div class="container">            
-
+          
+        <ul class="site-nav"  data-menu id="menu-container">
+            <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
+            <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолию</a></li> 
+            <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+        </ul>
+    </div>   
+       
+           <div class="container">
+                    
                 <ul class="contacts list">
                     <li class="contacts__item">
                         <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -57,12 +58,8 @@
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>
                             +380961111111</a></li>
-                        
-           
-
-                
                     </ul>
-            </div>
+                </div>
             </div>
     </header>
        
@@ -501,15 +498,15 @@
         </button>
   
         <ul class="mobile-menu">
-          <li><a href="" class="link">Студия</a></li>
-          <li><a href="" class="link">Портфолио</a></li>
-          <li><a href="" class="link">Контакты</a></li>
+          <li><a href="" class="mobile-menu__link">Студия</a></li>
+          <li><a href="" class="mobile-menu__link">Портфолио</a></li>
+          <li><a href="" class="mobile-menu__link">Контакты</a></li>
         </ul>
 
         <ul class="mobile-contacts">
             <li class="mobile__item">
-                <a class="mobile__link" href="tel:+380961111111">
-                    +380961111111</a></li>
+                <a class="mobile__link--tel" href="tel:+380961111111">
+                    +38 096 111 11 11</a></li>
             <li class="mobile__item">
                 <a class="mobile__link" href="mailto:info@devstudio.com">
                     info@devstudio.com</a></li>
@@ -517,10 +514,10 @@
 
 
         <ul class="mobile-site">
-            <li><a href="" class="link">Instagram</a></li>
-            <li><a href="" class="link">Twitter</a></li>
-            <li><a href="" class="link">Facebook</a></li>
-            <li><a href="" class="link">LinkedIn</a></li>
+            <li><a href="" class="mobile-site__link">Instagram</a></li>
+            <li><a href="" class="mobile-site__link">Twitter</a></li>
+            <li><a href="" class="mobile-site__link">Facebook</a></li>
+            <li><a href="" class="mobile-site__link">LinkedIn</a></li>
           </ul>
       </div>
 
@@ -533,7 +530,7 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/modal-menu.js"></script>
+    <script defer src="modal-menu.js"></script>
   </body>
 </html>
 

@@ -42,14 +42,14 @@
     font-size: 14px;
     line-height: 1.15;
     letter-spacing: 0.02em;
+    padding-bottom: 10px;
 
     
     transition: color 250ms $timing-fn;
     
-    @media screen and (min-width: 768px) { 
-    // .contacts__link:not(:last-child) {
-      padding-bottom: 10px;
-    
+    @media screen and (min-width: 1200px) { 
+       padding: 0;
+       margin-right: 30px;
   }
 
   &:hover,

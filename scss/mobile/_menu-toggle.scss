@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
     margin: 0;
     padding: 0;
     background-color: transparent;
@@ -12,6 +11,8 @@
     border: none;
     border-radius: 50%;
     outline: none;
+    
+    margin-left: auto;
   }
   
   @media (min-width: 768px) {
@@ -120,7 +121,7 @@
   .mobile-site {
     padding: 0;
     margin: 0;
-      display: inline-flex;
+    display: inline-flex;
   }
 
   .mobile-site__link {
@@ -131,14 +132,17 @@
     font-size: 18px;
     line-height: 1.222;  
     letter-spacing: 0.02em;
-    
-    color: $accent-color;
-    
-}
-
-.mobile-site__link:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     padding-right: 10px;
     margin-right: 10px;
+    
+    color: $accent-color;
+    
+    &:not(:last-of-type) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+    
+}
 
-  }

@@ -21,7 +21,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
       .hero {
-          background-image: url(../../images/header@2x.jpg);
+          background-image: url("../../images/header@2x.jpg");
       }
     }
 

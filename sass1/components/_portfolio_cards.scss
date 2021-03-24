@@ -13,6 +13,7 @@
     margin-top: 30px;
     margin-left: 30px;
 
+
 }
 
 & .product:hover,
@@ -83,6 +84,14 @@
     overflow: hidden;
     
 }
+}
+
+.product__link {
+
+    @media screen and (min-width:767px) {
+        height: 294px;
+        
+    }
 }
 
 

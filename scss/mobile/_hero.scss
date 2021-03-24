@@ -14,14 +14,14 @@
         to right, 
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-    ), url("../../images/header@2x.jpg");
+    ), url("../../images/header.jpg");
 }     
 
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
       .hero {
-          background-image: url(../../images/header@2x.jpg);
+          background-image: url(../../images/header.jpg);
       }
     }
 

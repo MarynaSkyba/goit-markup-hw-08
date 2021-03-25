@@ -89,15 +89,15 @@
     transition: all 250ms $timing-fn; 
 
     @media screen and (min-width: 380px) {
-        padding: 77px 24px;
+        padding: 107px 24px;
     }
 
     @media screen and (min-width: 767px) {
-            padding: 20px 20px;
+            padding: 55px 24px;
         }
 
     @media screen and (min-width: 1200px) {
-            padding: 41px 24px;
+            padding: 64px 24px;
         }    
         
     
@@ -112,15 +112,19 @@
 &  &__thumb {
     position: relative;
     overflow: hidden;
+
+    
     
 }
 }
 
 
 
-.product__link {
-    @media screen and (min-width:767px) {
-        height: 294px;
+.product__img {
+    @media screen and (max-width:767px) {
+    width: 450px;
+    
+}
+
         
     }
-}

@@ -639,19 +639,19 @@ img {
 
 @media screen and (min-width: 380px) {
   .product .product__text {
-    padding: 77px 24px;
+    padding: 107px 24px;
   }
 }
 
 @media screen and (min-width: 767px) {
   .product .product__text {
-    padding: 20px 20px;
+    padding: 55px 24px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .product .product__text {
-    padding: 41px 24px;
+    padding: 64px 24px;
   }
 }
 
@@ -666,9 +666,9 @@ img {
   overflow: hidden;
 }
 
-@media screen and (min-width: 767px) {
-  .product__link {
-    height: 294px;
+@media screen and (max-width: 767px) {
+  .product__img {
+    width: 450px;
   }
 }
 
